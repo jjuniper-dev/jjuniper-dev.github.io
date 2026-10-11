@@ -40,45 +40,141 @@
 
       <section id="projects" aria-labelledby="projects-heading">
         <h2 id="projects-heading">things I'm building</h2>
+        <p class="lead-in">Four projects, in rough order of how much of my time they take. All of them are experiments first and products second.</p>
+
         <div class="project">
           <h3>Personal Cognitive Architecture</h3>
           <p>Knowledge piles up faster than anyone can navigate it. PCA is how I map mine: a local-first system that surveys what I know, organizes it into usable context, and lets people, tools and agents travel by it, under my control.</p>
-          <p class="meta">AI · knowledge systems · personal infrastructure</p>
+          <p>It is also my test bench for ideas I care about professionally: explicit authority boundaries, least-privilege agents, human approval at consequential steps, and models that can be swapped without rewriting the system. A mechanism that works here is evidence, not a policy.</p>
+          <p class="meta">AI · knowledge systems · personal infrastructure · ongoing</p>
         </div>
+
         <div class="project">
           <h3>CORE</h3>
           <p>A lightweight way to give AI-assisted work a coherent project context: source references, instructions, working material, and a path from informal notes to traceable artifacts. Designed to remain useful without committing to one platform.</p>
-          <p class="meta">architecture · context · reproducibility</p>
+          <p>The question behind it is simple. When an assistant joins a project halfway through, what should it be handed so that its work can be checked later?</p>
+          <p class="meta">architecture · context · reproducibility · ongoing</p>
         </div>
+
         <div class="project">
           <h3><a href="https://github.com/jjuniper-dev/ontario-crown-land-explorer">Ontario Crown Land Explorer <span aria-hidden="true">↗</span></a></h3>
           <p>A side project exploring how maps, location, and practical software can make public geographic information easier to navigate.</p>
           <p class="meta">maps · exploration · side project</p>
         </div>
+
         <div class="project">
           <h3>LetsGo</h3>
-          <p>A couples planning app for finding local things to do. Each person swipes on events on their own; when you both say yes, the match becomes a plan with the practical details and a way to navigate there. Early-stage: the first working version is still being built.</p>
-          <p class="meta">apps · planning · side project</p>
+          <p>A couples planning app for finding local things to do. Each person swipes on events on their own; when you both say yes, the match becomes a plan with the practical details and a way to navigate there.</p>
+          <p>The design bet is that deciding together is the hard part of going out, and that a private yes from each side removes most of the friction. Early-stage: the first working version is still being built.</p>
+          <p class="meta">apps · planning · side project · early stage</p>
         </div>
+
         <p class="more">More experiments are in progress. I will link selected public work here after review.</p>
       </section>
 
       <section id="visual-notes" aria-labelledby="visuals-heading">
         <h2 id="visuals-heading">visual notes</h2>
-        <p>I often think in diagrams: capability maps, operating models, system boundaries, and the relationships between people, information, and technology.</p>
-        <p>I'm organizing a library of those visuals with titles, context, and links to the projects that produced them. The aim is not a gallery of pretty pictures, but a useful archive of how ideas developed.</p>
-        <p class="aside">The visual library is being curated. I'll add selected diagrams here as they are ready to share.</p>
+        <p>I often think in diagrams: capability maps, operating models, system boundaries, and the relationships between people, information, and technology. Two small ones to start, both about how I work rather than about any one system.</p>
+
+        <figure>
+          <svg viewBox="0 0 640 150" role="img" aria-labelledby="fig1-title fig1-desc" xmlns="http://www.w3.org/2000/svg">
+            <title id="fig1-title">Explore, validate, govern, scale</title>
+            <desc id="fig1-desc">Four stages in a row: explore, validate, govern, scale. A return arrow runs from scale back to explore, and a bracket marks explore and validate as the freedom to explore and govern and scale as the discipline to integrate.</desc>
+            <defs>
+              <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+                <path d="M0 0L10 5L0 10z" class="fig-fill"/>
+              </marker>
+            </defs>
+            <g class="fig-box">
+              <rect x="10" y="40" width="130" height="46" rx="6"/>
+              <rect x="180" y="40" width="130" height="46" rx="6"/>
+              <rect x="330" y="40" width="130" height="46" rx="6"/>
+              <rect x="500" y="40" width="130" height="46" rx="6"/>
+            </g>
+            <g class="fig-text" text-anchor="middle">
+              <text x="75" y="68">Explore</text>
+              <text x="245" y="68">Validate</text>
+              <text x="395" y="68">Govern</text>
+              <text x="565" y="68">Scale</text>
+            </g>
+            <g class="fig-line" fill="none" marker-end="url(#arr)">
+              <path d="M140 63H178"/>
+              <path d="M310 63H328"/>
+              <path d="M460 63H498"/>
+              <path d="M565 90V124H75V92"/>
+            </g>
+            <g class="fig-muted" text-anchor="middle">
+              <text x="160" y="22">freedom to explore</text>
+              <text x="480" y="22">discipline to integrate</text>
+              <text x="320" y="142">what survives goes back in as the next question</text>
+            </g>
+            <g class="fig-line" fill="none">
+              <path d="M10 30H310"/>
+              <path d="M330 30H630"/>
+            </g>
+          </svg>
+          <figcaption><strong>Explore, validate, govern, scale.</strong> Experiments are cheap and encouraged. Only what has been validated is governed, and only what is governed is scaled. Convergence is something you choose, not something that happens to you.</figcaption>
+        </figure>
+
+        <figure>
+          <svg viewBox="0 0 640 250" role="img" aria-labelledby="fig2-title fig2-desc" xmlns="http://www.w3.org/2000/svg">
+            <title id="fig2-title">Five layers from stable principles to observable evidence</title>
+            <desc id="fig2-desc">A stack of five layers. From top to bottom: memory for stable preferences and principles, context for relevant history and current working state, control for decisions and approvals, execution for code and workflows, evidence for validated results. The lower layers are more authoritative for current facts.</desc>
+            <g class="fig-box">
+              <rect x="10" y="10" width="440" height="40" rx="6"/>
+              <rect x="10" y="58" width="440" height="40" rx="6"/>
+              <rect x="10" y="106" width="440" height="40" rx="6"/>
+              <rect x="10" y="154" width="440" height="40" rx="6"/>
+              <rect x="10" y="202" width="440" height="40" rx="6"/>
+            </g>
+            <g class="fig-text">
+              <text x="26" y="35">Memory</text>
+              <text x="26" y="83">Context</text>
+              <text x="26" y="131">Control</text>
+              <text x="26" y="179">Execution</text>
+              <text x="26" y="227">Evidence</text>
+            </g>
+            <g class="fig-muted">
+              <text x="130" y="35">stable principles and preferences</text>
+              <text x="130" y="83">relevant history, current working state</text>
+              <text x="130" y="131">decisions, approvals, who is accountable</text>
+              <text x="130" y="179">code, workflows, platforms</text>
+              <text x="130" y="227">validated artifacts, observable results</text>
+            </g>
+            <g class="fig-line" fill="none" marker-end="url(#arr)">
+              <path d="M520 20V228"/>
+            </g>
+            <g class="fig-muted" text-anchor="middle">
+              <text x="568" y="96">more</text>
+              <text x="568" y="114">authoritative</text>
+              <text x="568" y="132">for what is</text>
+              <text x="568" y="150">true now</text>
+            </g>
+          </svg>
+          <figcaption><strong>Memory is orientation, not a database.</strong> An assistant should start from the top of this stack, but check the bottom before it states a current fact.</figcaption>
+        </figure>
+
+        <p class="aside">More diagrams will be added here as they are ready to share, each with its context.</p>
       </section>
 
       <section id="writing" aria-labelledby="writing-heading">
         <h2 id="writing-heading">occasional writing</h2>
-        <p>Not really a blog. I'll add short notes when I have something worth documenting: what I tried, what I learned, and what I might do differently next time.</p>
-        <p class="aside">No posts yet. I'd rather start with an honest blank page than a fabricated archive.</p>
+        <p>Not really a blog. Short notes when I have something worth documenting: what I tried, what I learned, and what I might do differently next time.</p>
+        <ul class="posts">
+          <li>
+            <a href="writing/capability-before-technology.html">Capability before technology</a>
+            <span class="meta">October 2026 · why a requirement should never be a product name</span>
+          </li>
+          <li>
+            <a href="writing/memory-is-orientation.html">Memory is orientation, not a project database</a>
+            <span class="meta">October 2026 · what an AI assistant should remember, and what it should go and check</span>
+          </li>
+        </ul>
       </section>
 
       <section id="elsewhere" aria-labelledby="elsewhere-heading">
         <h2 id="elsewhere-heading">elsewhere</h2>
-        <p>Selected code and experiments will be linked here when they are ready to share. This site will grow gradually, one useful addition at a time.</p>
+        <p><a href="https://github.com/jjuniper-dev">github.com/jjuniper-dev</a> for code and experiments. Selected work will be linked from the projects above as it is ready to share.</p>
       </section>
     </main>
 

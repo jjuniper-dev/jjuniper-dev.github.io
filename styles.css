@@ -67,3 +67,23 @@ footer a { color: var(--muted); }
   nav, .skip-link { display: none; }
   a::after { content: none; }
 }
+
+/* Additions: lead-in text, figures, writing list, post pages */
+.lead-in { color: var(--muted); font-size: .94rem; }
+figure { margin: 26px 0 30px; }
+figure svg { width: 100%; height: auto; display: block; }
+figcaption { margin-top: 10px; font-size: .88rem; color: var(--muted); line-height: 1.6; }
+figcaption strong { color: var(--ink); }
+.fig-box rect { fill: none; stroke: var(--rule); stroke-width: 1.5; }
+.fig-line { stroke: var(--accent); stroke-width: 1.5; }
+.fig-fill { fill: var(--accent); }
+.fig-text text { fill: var(--ink); font: 600 14px ui-sans-serif, system-ui, sans-serif; }
+.fig-muted text { fill: var(--muted); font: 12.5px ui-sans-serif, system-ui, sans-serif; }
+.posts { list-style: none; margin: 0 0 17px; padding: 0; }
+.posts li { margin: 0 0 16px; }
+.posts a { font-weight: 650; }
+.posts .meta { display: block; }
+.site-header.slim { padding-top: clamp(28px, 6vw, 56px); padding-bottom: 18px; }
+.site-header.slim .site-mark { text-decoration: none; }
+.post h1 { font-size: clamp(1.9rem, 5vw, 2.6rem); margin-top: 28px; }
+.post h2 { text-transform: none; margin-top: 28px; }
