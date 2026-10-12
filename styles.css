@@ -87,3 +87,6 @@ figcaption strong { color: var(--ink); }
 .site-header.slim .site-mark { text-decoration: none; }
 .post h1 { font-size: clamp(1.9rem, 5vw, 2.6rem); margin-top: 28px; }
 .post h2 { text-transform: none; margin-top: 28px; }
+.plain { margin: 0 0 17px; padding-left: 1.2em; }
+.plain li { margin-bottom: 6px; }
+.post .lede { margin-top: 12px; }

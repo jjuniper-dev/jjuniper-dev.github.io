@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en-CA">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#f8f8f5">
+  <meta name="description" content="How I approach enterprise architecture for AI and data: capability first, governance explicit, convergence intentional.">
+  <meta name="author" content="James Juniper">
+  <title>Architecture practice — James Juniper</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body id="top">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="page">
+    <header class="site-header slim">
+      <div class="topline"><a class="site-mark" href="index.html" aria-label="Home">jj.</a><span class="quiet"><a href="index.html">home</a></span></div>
+    </header>
+    <main id="main" class="post">
+      <article>
+        <h1>Architecture practice<span class="period">.</span></h1>
+        <p class="lede">Architecture should reduce uncertainty and fragmentation. It should help someone decide, not just produce diagrams.</p>
+
+        <h2>What I try to make clear</h2>
+        <p>For any piece of AI or data architecture, a decision-maker should be able to see: what capability is needed and why, what already exists and can be reused, what is missing, who is accountable, what is governed and what is still experimental, what is tactical and what should converge, and what decision is actually being asked for.</p>
+
+        <h2>The order I work in</h2>
+        <p>Business need, then capability, then constraints, then architecture, then platform or service, then technology. Starting from a product and working backwards produces a requirement that happens to fit it. I write the function first and evaluate technology against it second. <a href="writing/capability-before-technology.html">More on that here.</a></p>
+
+        <h2>Keep the layers apart</h2>
+        <p>Calling everything "the AI platform" hides the decisions. I separate six concerns and look at each on its own terms:</p>
+        <ul class="plain">
+          <li><strong>Interaction.</strong> The tools and experiences people actually use.</li>
+          <li><strong>Runtime.</strong> Where AI, analytics and workflows execute.</li>
+          <li><strong>AI control and governance.</strong> Policy, evaluation, safety, evidence, approvals.</li>
+          <li><strong>Data and knowledge.</strong> Governed data, semantics, retrieval, lineage.</li>
+          <li><strong>Identity, trust and security.</strong> Who may do what, and how that is audited.</li>
+          <li><strong>Operations.</strong> Observability, cost, reliability, service management.</li>
+        </ul>
+        <p>Shared controls belong in a shared layer. Projects should inherit them rather than rebuild them one at a time.</p>
+
+        <h2>Autonomy is a governance question</h2>
+        <p>Generative AI, agentic AI and AI agents are not the same thing just because they use language models. What changes as you move along that range is autonomy, authority and the ability to act, and with them the operational impact and the governance owed. Accountability stays with people. AI does not create its own accountability regime, and it should not quietly become the decision authority.</p>
+
+        <h2>Freedom to explore, discipline to integrate</h2>
+        <p>Experiments are cheap and should stay cheap. What matters is the path out of them: explore, validate, govern, scale. A tactical implementation is fine as long as its convergence path is written down, so that a project decision does not become permanent enterprise architecture by accident.</p>
+
+        <h2>Evidence over assertion</h2>
+        <p>I try to mark where a statement sits: demonstrated, recommended, proposed, or approved. A recommendation is not a decision, and a prototype is evidence rather than a mandate. The same discipline applies to AI assistants: they should work from governed context and check live sources before stating anything current.</p>
+
+        <p class="aside">This page describes my own working approach. It is not a statement on behalf of any employer, and it does not describe any specific organization's systems, programs or decisions.</p>
+      </article>
+    </main>
+    <footer>
+      <span>James Juniper · October 2026</span>
+      <a href="index.html">home</a>
+    </footer>
+  </div>
+</body>
+</html>
